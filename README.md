@@ -1,19 +1,18 @@
-## Welcome to CoModIDE
+# Welcome to CoModIDE
 
-This site is a placeholder and remains to be actually built. Please ignore all content below this line.
-
-## Repositories
-
-{% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
-{% endfor %}
+CoModIDE is the Comprehensive Modular Ontology IDE -- a plugin for the Protégé ontology editor that supports graphical drag-and-drop based composition of ontologies, supported by an embedded Ontology Design Pattern library. It is developed jointly by the DaSeLab at Wright State University, Ohio, USA and the Jönköping AI Lab at Jönköping University, Sweden. CoModIDE is in early days and undergoing rapid development -- so feel free to try it out and suggest feature improvements or bug fixes.
 
 ## Installation instructions
 
-1. Do this
-2. Do that
-3. Do the third thing
+1. Go to the [latest CoModIDE release page](https://github.com/comodide/CoModIDE/releases/latest/).
+2. Expand the "Assets" symbol, and download the precompiled JAR file called CoModIDE-X.Y.Z-SNAPSHOT.jar (where X.Y.Z is a version number).
+3. Find your Protégé plugins directory. The location of this directory varies. On Windows and Linux machines, it is commonly a subdirectory of the Protégé install directory called "plugins". On a Mac it is typically nested inside the Protégé app bundle; find your Protégé.app file, right click on it, select "Show package contents", and navigate to the subdirectory Contents/Java/plugins.
+4. Copy the previously downloaded JAR file into this directory.
+5. Launch Protégé.
+6. Activate the CoModIDE tab through the menu Window/Tabs/Comodide (on Mac, exact menu structure may differ on Linux/Windows systems)
 
 ## Video walkthrough
+
+We are putting together a video walkthrough of the CoModIDE plugin which will shortly be presented below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
