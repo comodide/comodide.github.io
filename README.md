@@ -1,6 +1,6 @@
 # Welcome to CoModIDE
 
-CoModIDE is the Comprehensive Modular Ontology IDE -- a plugin for the Protégé ontology editor that supports graphical drag-and-drop based composition of ontologies, supported by an embedded Ontology Design Pattern library. It is developed jointly by the DaSeLab at Wright State University, Ohio, USA and the Jönköping AI Lab at Jönköping University, Sweden. CoModIDE is in early days and undergoing rapid development -- so feel free to try it out and suggest feature improvements or bug fixes.
+CoModIDE is the Comprehensive Modular Ontology IDE -- a plugin for the Protégé ontology editor that supports graphical drag-and-drop based composition of ontologies, supported by an embedded Ontology Design Pattern library. It is developed jointly by the Data Semantics Lab at Wright State University, USA and the Jönköping AI Lab at Jönköping University, Sweden. CoModIDE is in early days and undergoing rapid development -- so feel free to try it out and suggest feature improvements or bug fixes.
 
 ## Installation instructions
 
@@ -13,6 +13,11 @@ CoModIDE is the Comprehensive Modular Ontology IDE -- a plugin for the Protégé
 
 ## Video walkthrough
 
-We are putting together a video walkthrough of the CoModIDE plugin which will shortly be presented below.
+For a demonstration of CoModIDE features, see the below video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qryKVteMMfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Contact details
+
+* [Cogan Shimizu](mailto:shimizu.5@wright.edu), Data Semantics Lab, Wright State University, USA
+* [Karl Hammar](mailto:karl.hammar@jonkoping.ai), Jönköping AI Lab, Jönköping University, Sweden
