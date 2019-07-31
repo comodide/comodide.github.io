@@ -15,7 +15,7 @@ CoModIDE is the Comprehensive Modular Ontology IDE -- a plugin for the Protégé
 
 For a demonstration of CoModIDE features, see the below video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qryKVteMMfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rHLdGyAdMuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Contact details
 
