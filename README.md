@@ -19,5 +19,5 @@ For a demonstration of CoModIDE features, see the below video.
 
 ## Contact details
 
-* [Cogan Shimizu](mailto:shimizu.5@wright.edu), Data Semantics Lab, Wright State University, USA
+* [Cogan Shimizu](mailto:cogan.comodide@coganshimizu.com), Data Semantics Lab, Kansas State University, USA
 * [Karl Hammar](mailto:karl.hammar@jonkoping.ai), Jönköping AI Lab, Jönköping University, Sweden
