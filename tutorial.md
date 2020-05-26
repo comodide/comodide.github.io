@@ -11,10 +11,9 @@ This tutorial aims to illustrate to participants how to use CoModIDE for both ap
 
 After taking this tutorial, participants should:
 
-1. Be able to select, instantiate, align, and remove ontology design pattern-based modular into/from a modular ontology using CoModIDE.
-2. Be able to create and import new ontology design patterns, adding them to the CoModIDE pattern library.
-3. Be able to apply the XD methodology and CoModIDE to create and evolve medium-sized ontologies.
-4. Understand the design choices that have gone into the CoModIDE tooling, including the tradeoffs between usability and logic expressivity that need to be considered when rendering ontologies graphically; and how the use of OPLa allows us to emulate concepts not native to the OWL language, such as interfaces and modules.
+1. Be able to select, instantiate, align, and remove ontology design pattern-based modules into/from a modular ontology using CoModIDE.
+2. Be able to apply the XD methodology and CoModIDE to create and evolve medium-sized ontologies.
+3. Understand the design choices that have gone into the CoModIDE tooling, including the tradeoffs between usability and logic expressivity that need to be considered when rendering ontologies graphically.
 
 ## Tutorial Schedule
 
@@ -23,7 +22,7 @@ After taking this tutorial, participants should:
 * Introductory lecture to ODPs, eXtreme Design, the CoModIDE tool -- 20 minutes.
 * Tutor-led tool walkthrough and example modelling on projector -- 20 minutes.
 * Tooling installation on participant computers -- 10 minutes.
-* Individual hands-on development exercise, tutored by the presenters -- 40 minutes.
+* [Individual hands-on development exercise](tutorial-task1.html), tutored by the presenters -- 40 minutes.
 
 **Break**
 
