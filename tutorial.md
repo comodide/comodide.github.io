@@ -28,14 +28,14 @@ After taking this tutorial, participants should:
 
 **Exercise 2 -- Advanced modelling topics -- Smart Buildings domain -- 90 minutes**
 
-* Lecture on advanced features: building ODPs and customizing ODP libraries, OTTR templates, OPLa module annotations, etc. -- 30 minutes.
+* Lecture 2: CoModIDE architecture, building ODPs, OPLa module annotations, ongoing and future work -- 30 minutes.
 * Individual hands-on development exercise, tutored by the presenters -- 60 minutes.
 
 ## Presenters
 
 **Karl Hammar**  
 Jönköping AI Lab, Jönköping University, Sweden  
-Email: [karl.hammar@jonkoping.ai](mailto:karl.hammar@jonkoping.ai)  
+Email: [karl.hammar@jail.ai](mailto:karl.hammar@jail.ai)  
 Web: [https://karlhammar.com](https://karlhammar.com)
 
 Karl holds a PhD from Linköping University, Sweden, and is employed within the Jönköping Artificial Intelligence Lab (JAIL) at Jönköping University, Sweden. Karl’s PhD dissertation focused specifically on ontology engineering methods and tools supporting the use of Ontology Design Patterns. His research since has continued in this direction, focusing on applied ontology engineering in real-world scenarios, ranging from building automation and analytics, to veterinary syndromic surveillance.
