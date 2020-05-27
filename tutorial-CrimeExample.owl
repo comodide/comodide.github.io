@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#"
+     xml:base="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#crimeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#crimeTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Crime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#TimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#performsAgentRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#performsAgentRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#personHasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#personHasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PersonName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#providesParticipantRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#providesParticipantRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Crime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#roleDuringTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#roleDuringTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#TimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#alias -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#alias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PersonName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">660.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#endTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">680.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">330.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#familyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#familyName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PersonName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#givenName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#givenName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PersonName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">580.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#nameAsString -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#nameAsString">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PersonName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.02447342732194</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">509.9278686446858</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#personHasDOB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#personHasDOB">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#startTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">600.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">390.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Crime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Crime">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">410.3874145813036</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">70.20202618542942</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PerpetratorRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PerpetratorRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">450.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">470.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Person">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">109.64062136860201</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.10021345743115</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PersonName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#PersonName">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.04954523554866</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.20579825738537</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">389.8532382798026</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">279.64810262050537</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#TimeInterval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#TimeInterval">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">620.305172134356</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.95181181491057</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#VictimRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#VictimRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">330.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">480.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#WitnessRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#WitnessRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#RoleInCrime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">390.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">570.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">109.64062136860201</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.10021345743115</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.38741458130357</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">360.2020261854294</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">389.8532382798026</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">279.64810262050537</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">620.305172134356</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.95181181491057</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.04954523554866</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.20579825738537</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
