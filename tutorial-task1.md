@@ -14,7 +14,7 @@ The resulting ontology should be able to answer the following competency questio
 4. At what time was observation example:observationXX made? (*Temporal Extent* pattern)
 5. Which sensor created example:observationXX? (no pattern)
 
-Use the following CoModIDE settings:
+For this task, we recommend to use the following CoModIDE settings:
 
 * **Entity naming:** use target namespace
 * **Module annotations placement:** external
