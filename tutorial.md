@@ -20,7 +20,7 @@ After taking this tutorial, participants should:
 **Exercise 1 -- Introduction to CoModIDE modelling -- Instructions/Workflows domain -- 90 minutes**
 
 * Introductory lecture to ODPs, eXtreme Design, the CoModIDE tool -- 20 minutes.
-* Tutor-led tool walkthrough and example modelling on projector -- 20 minutes.
+* [Tutor-led tool walkthrough and example modelling on projector](tutorial-example.html) -- 20 minutes.
 * Tooling installation on participant computers -- 10 minutes.
 * [Individual hands-on development exercise](tutorial-task1.html), tutored by the presenters -- 40 minutes.
 

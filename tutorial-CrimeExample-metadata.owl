@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-comodide-metadata#"
+     xml:base="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-comodide-metadata"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:opla="http://ontologydesignpatterns.org/opla#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-comodide-metadata">
+        <owl:imports rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla#isNativeTo -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla#isNativeTo"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla#Module -->
+
+    <owl:Class rdf:about="http://ontologydesignpatterns.org/opla#Module"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla#Pattern -->
+
+    <owl:Class rdf:about="http://ontologydesignpatterns.org/opla#Pattern"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186">
+        <rdf:type rdf:resource="http://ontologydesignpatterns.org/opla#Module"/>
+        <opla:reusesPatternAsTemplate rdf:resource="https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Participant Role&apos; ODP Instantiation Module</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/aee944bf-cd63-43fd-9507-f8034a71b2b5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/aee944bf-cd63-43fd-9507-f8034a71b2b5">
+        <rdf:type rdf:resource="http://ontologydesignpatterns.org/opla#Module"/>
+        <opla:reusesPatternAsTemplate rdf:resource="https://archive.org/services/purl/domain/modular_ontology_design_library/namestub"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Name Stub&apos; ODP Instantiation Module</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://archive.org/services/purl/domain/modular_ontology_design_library/namestub -->
+
+    <owl:NamedIndividual rdf:about="https://archive.org/services/purl/domain/modular_ontology_design_library/namestub">
+        <rdf:type rdf:resource="http://ontologydesignpatterns.org/opla#Pattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name Stub</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole -->
+
+    <owl:NamedIndividual rdf:about="https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole">
+        <rdf:type rdf:resource="http://ontologydesignpatterns.org/opla#Pattern"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participant Role</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/aee944bf-cd63-43fd-9507-f8034a71b2b5"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/aee944bf-cd63-43fd-9507-f8034a71b2b5"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/aee944bf-cd63-43fd-9507-f8034a71b2b5"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Agent">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#Event">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#NameStub">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/aee944bf-cd63-43fd-9507-f8034a71b2b5"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#ParticipantRole">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#TemporalExtent">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#hasTemporalExtent">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#nameAsString">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/aee944bf-cd63-43fd-9507-f8034a71b2b5"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#performsAgentRole">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38#providesParticipantRole">
+        <opla:isNativeTo rdf:resource="http://www.semanticweb.org/karlh/ontologies/2020/4/untitled-ontology-38-modules/a522028a-4fc9-423e-91ec-9bbd9ddc2186"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
