@@ -17,7 +17,7 @@ After taking this tutorial, participants should:
 
 ## Tutorial Schedule
 
-**Exercise 1 -- Introduction to CoModIDE modelling -- Instructions/Workflows domain -- 90 minutes**
+**Exercise 1 -- Introduction to CoModIDE modelling -- Sensors/Observations domain -- 90 minutes**
 
 * [Introductory lecture to ODPs, eXtreme Design, the CoModIDE tool](tutorial-lecture1.mp4) -- 20 minutes.
 * [Tutor-led tool walkthrough and example modelling on projector](tutorial-example.html) -- 20 minutes.
@@ -26,7 +26,7 @@ After taking this tutorial, participants should:
 
 **Break**
 
-**Exercise 2 -- Advanced modelling topics -- Smart Buildings domain -- 90 minutes**
+**Exercise 2 -- Advanced modelling topics -- Instructions/Workflows domain -- 90 minutes**
 
 * [Lecture 2: CoModIDE architecture, building ODPs, OPLa module annotations, ongoing and future work](tutorial-lecture2.pdf) -- 30 minutes.
 * [Individual hands-on development exercise](tutorial-task2.html), tutored by the presenters -- 60 minutes.

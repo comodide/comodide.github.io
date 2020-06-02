@@ -1,3 +1,5 @@
 theme: jekyll-theme-slate
 github:
   repository_url: https://github.com/comodide/
+title: CoModIDE
+description: The Comprehensive Modular Ontology IDE -- a Protégé plugin
