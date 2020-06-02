@@ -29,7 +29,7 @@ After taking this tutorial, participants should:
 **Exercise 2 -- Advanced modelling topics -- Smart Buildings domain -- 90 minutes**
 
 * [Lecture 2: CoModIDE architecture, building ODPs, OPLa module annotations, ongoing and future work](tutorial-lecture2.pdf) -- 30 minutes.
-* [Individual hands-on development exercise](tutoria-task2.html), tutored by the presenters -- 60 minutes.
+* [Individual hands-on development exercise](tutorial-task2.html), tutored by the presenters -- 60 minutes.
 
 ## Presenters
 
