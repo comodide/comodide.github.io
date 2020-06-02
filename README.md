@@ -1,8 +1,10 @@
 # Welcome to CoModIDE
 
-CoModIDE is the Comprehensive Modular Ontology IDE -- a plugin for the Protégé ontology editor that supports graphical drag-and-drop based composition of ontologies, supported by an embedded Ontology Design Pattern library. It is developed jointly by the Data Semantics Lab at Wright State University, USA and the Jönköping AI Lab at Jönköping University, Sweden. CoModIDE is in early days and undergoing rapid development -- so feel free to try it out and suggest feature improvements or bug fixes.
+CoModIDE is the Comprehensive Modular Ontology IDE -- a plugin for the Protégé ontology editor that supports graphical drag-and-drop based composition of ontologies, supported by an embedded Ontology Design Pattern library. It is developed jointly by the Data Semantics Lab at Kansas State University, USA and the Jönköping AI Lab at Jönköping University, Sweden. CoModIDE is in early days and undergoing rapid development -- so feel free to try it out and suggest feature improvements or bug fixes.
 
 ## Installation instructions
+
+Use the Protégé plugins repository, `File/Check for plugins...`. Check CoModIDE and select install. Alternatively, install manually using these instructions: 
 
 1. Go to the [latest CoModIDE release page](https://github.com/comodide/CoModIDE/releases/latest/).
 2. Expand the "Assets" symbol, and download the precompiled JAR file called CoModIDE-X.Y.Z-SNAPSHOT.jar (where X.Y.Z is a version number).
@@ -20,4 +22,4 @@ For a demonstration of CoModIDE features, see the below video.
 ## Contact details
 
 * [Cogan Shimizu](mailto:cogan.comodide@coganshimizu.com), Data Semantics Lab, Kansas State University, USA
-* [Karl Hammar](mailto:karl.hammar@jonkoping.ai), Jönköping AI Lab, Jönköping University, Sweden
+* [Karl Hammar](mailto:karl.hammar@jail.ai), Jönköping AI Lab, Jönköping University, Sweden
