@@ -19,6 +19,10 @@ For a demonstration of CoModIDE features, see the below video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rHLdGyAdMuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## ESWC 2020 Tutorial
+
+Our tutorial on CoModIDE will be held from 14:00 through 17:00 CEST; for details, see [the tutorial page](tutorial.html).
+
 ## Contact details
 
 * [Cogan Shimizu](mailto:cogan.comodide@coganshimizu.com), Data Semantics Lab, Kansas State University, USA
