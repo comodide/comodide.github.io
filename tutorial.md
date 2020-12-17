@@ -34,9 +34,9 @@ After taking this tutorial, participants should:
 ## Presenters
 
 **Cogan Shimizu**  
-Data Semantics Lab, Kansas State University, USA
-Email: [coganmshimizu@ksu.edu ](mailto:coganmshimizu@ksu.edu )  
-Web: [https://coganshimizu.com/](https://coganshimizu.com/)
+Data Semantics Lab, Kansas State University, USA  
+Email: [coganmshimizu@ksu.edu ](mailto:coganmshimizu@ksu.edu)  
+Web: [https://coganshimizu.com/](https://coganshimizu.com/)  
 
 Cogan holds a PhD from Kansas State University (KSU), USA, and is currently a postdoctoral researcher in the Data Semantics Laboratory, also at KSU. Cogan's dissertation focused on ontology engineering methodologies, specifically those that involve ontology design patterns, with an intended result of making ontology engineering more accessible to non-ontologists. Currently, his work involves the development, use, and evaluation of intuitive tooling infrastructure to support such methodologies. He has co-organized the Workshop on Ontology Design and Patterns at ISWC in 2019 and 2020, and the 1st workshop on the Semantic Web in Practice: Pedagogy and Tools at ISWC 2020, as well as participating in and leading numerous VoCamps.
 
