@@ -19,11 +19,19 @@ For a demonstration of CoModIDE features, see the below video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rHLdGyAdMuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## ESWC 2020 Tutorial
+## Publications
 
-Our tutorial on CoModIDE will be held from 14:00 through 17:00 CEST; for details, see [the tutorial page](tutorial.html).
+If you want to refer to CoModIDE in publications, please see the below references.
+
+* **ESWC 2020 research paper evaluating CoModIDE (nominated as Best Research Paper):** Shimizu C., Hammar K., Hitzler P. (2020) [Modular Graphical Ontology Engineering Evaluated](https://link.springer.com/chapter/10.1007/978-3-030-49461-2_2). In: Harth A. et al. (eds) The Semantic Web. ESWC 2020. Lecture Notes in Computer Science, vol 12123. Springer, Cham.
+
+* **ISWC 2019 Poster paper introducing CoModIDE**: Shimizu, C., Hammar, K. (2019), [CoModIDE – The Comprehensive Modular Ontology Engineering IDE](http://ceur-ws.org/Vol-2456/paper65.pdf). In: Mari Carmen Suárez-Figueroa, Gong Cheng, Anna Lisa Gentile, Christophe Guéret, Maria Keet, Abraham Bernstein (ed.), Proceedings of the ISWC 2019 Satellite Tracks (Posters & Demonstrations, Industry, and Outrageous Ideas), CEUR Workshop Proceedings Volume 2456
+
+## ESWC 2021 Tutorial
+
+Our tutorial on CoModIDE will be held from 09:00 through 12:30 CEST; for details, see [the tutorial page](tutorial.html).
 
 ## Contact details
 
 * [Cogan Shimizu](mailto:cogan.comodide@coganshimizu.com), Data Semantics Lab, Kansas State University, USA
-* [Karl Hammar](mailto:karl.hammar@jail.ai), Jönköping AI Lab, Jönköping University, Sweden
+* [Karl Hammar](mailto:karl.hammar@ju.se), Jönköping AI Lab, Jönköping University, Sweden
