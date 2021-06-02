@@ -17,16 +17,18 @@ After taking this tutorial, participants should:
 
 ## Tutorial Schedule
 
-**Exercise 1 -- Introduction to CoModIDE modelling -- Sensors/Observations domain -- 90 minutes**
+The tutorial is held on Sunday June 6, 2021, starting at 09:00 CEST.
+
+**Exercise 1 -- Introduction to CoModIDE modelling -- Sensors/Observations domain -- 90 minutes (09:00-10:30 CEST)**
 
 * [Introductory lecture to ODPs, eXtreme Design, the CoModIDE tool](tutorial-lecture1.mp4) -- 20 minutes.
 * [Tutor-led tool walkthrough and example modelling on projector](tutorial-example.html) -- 20 minutes.
 * Tooling installation on participant computers -- 10 minutes.
 * [Individual hands-on development exercise](tutorial-task1.html), tutored by the presenters -- 40 minutes.
 
-**Break**
+**Break (10:30-10:45 CEST)**
 
-**Exercise 2 -- Advanced modelling topics -- Instructions/Workflows domain -- 90 minutes**
+**Exercise 2 -- Advanced modelling topics -- Instructions/Workflows domain -- 90 minutes (10:45-12:15 CEST)**
 
 * [Lecture 2: CoModIDE architecture, building ODPs, OPLa module annotations, ongoing and future work](tutorial-lecture2.pdf) -- 30 minutes.
 * [Individual hands-on development exercise](tutorial-task2.html), tutored by the presenters -- 60 minutes.
