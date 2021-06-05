@@ -43,8 +43,8 @@ Web: [https://coganshimizu.com/](https://coganshimizu.com/)
 Cogan holds a PhD from Kansas State University (KSU), USA, and is currently a postdoctoral researcher in the Data Semantics Laboratory, also at KSU. Cogan's dissertation focused on ontology engineering methodologies, specifically those that involve ontology design patterns, with an intended result of making ontology engineering more accessible to non-ontologists. Currently, his work involves the development, use, and evaluation of intuitive tooling infrastructure to support such methodologies. He has co-organized the Workshop on Ontology Design and Patterns at ISWC in 2019 and 2020, and the 1st workshop on the Semantic Web in Practice: Pedagogy and Tools at ISWC 2020, as well as participating in and leading numerous VoCamps.
 
 **Karl Hammar**  
-Department of Computer Science, Jönköping University, Sweden  
+Department of Computing, Jönköping University, Sweden  
 Email: [karl.hammar@ju.se](mailto:karl.hammar@ju.se)  
 Web: [https://karlhammar.com](https://karlhammar.com)
 
-Karl holds a PhD from Linköping University, Sweden, and is employed as an Assistant Professor at the Department of Computer Science at Jönköping University, Sweden. Karl's PhD dissertation focused specifically on ontology engineering methods and tools supporting the use of Ontology Design Patterns. His research has continued in this direction, focusing on applied ontology engineering in real-world scenarios, ranging from building automation and analytics, to veterinary syndromic surveillance.
+Karl is the Head of the Department of Computing at Jönköping University, Sweden. His PhD dissertation focused specifically on ontology engineering methods and tools supporting the use of Ontology Design Patterns. His research has continued in this direction, focusing on applied ontology engineering in real-world scenarios, ranging from building automation and analytics, to veterinary syndromic surveillance.

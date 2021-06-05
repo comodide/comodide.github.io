@@ -17,7 +17,7 @@ The resulting ontology should be able to answer the following competency questio
 For this task, we recommend to use the following CoModIDE settings:
 
 * **Entity naming:** use target namespace
-* **Module annotations placement:** external
+* **Module annotations placement:** internal
 * **Edge creation axioms:** RDFS Domain/Range
 * **Edge deletion policy:** delete property declarations
 * **Send telemetry:** your choice, but we would definitely appreciate if you would have it checked
