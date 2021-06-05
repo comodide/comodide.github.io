@@ -1,246 +1,305 @@
-@prefix : <http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#> .
+@prefix : <https://w3id.org/hammar/recipe#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554> .
+@base <https://w3id.org/hammar/recipe> .
 
-<http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554> rdf:type owl:Ontology .
+<https://w3id.org/hammar/recipe> rdf:type owl:Ontology .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://ontologydesignpatterns.org/opla#isNativeTo
+<http://ontologydesignpatterns.org/opla#isNativeTo> rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate
+<http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> rdf:type owl:AnnotationProperty .
+
+
 ###  http://ontologydesignpatterns.org/opla-sd#entityPosition
-<http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty .
+<http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty ;
+                                                           <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> ,
+                                                                                                               <https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c> ,
+                                                                                                               <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> .
 
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPositionX
-<http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty .
+<http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty ;
+                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> ,
+                                                                                                                <https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c> ,
+                                                                                                                <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> .
 
 
 ###  http://ontologydesignpatterns.org/opla-sd#entityPositionY
-<http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty .
+<http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty ;
+                                                            <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> ,
+                                                                                                                <https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c> ,
+                                                                                                                <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#callsFor
-:callsFor rdf:type owl:ObjectProperty .
+###  https://w3id.org/hammar/recipe#hasFirstStep
+:hasFirstStep rdf:type owl:ObjectProperty ;
+              rdfs:domain :Recipe ;
+              rdfs:range :Step ;
+              <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasFoodKind
-:hasFoodKind rdf:type owl:ObjectProperty ;
-             rdfs:domain :FoodItem ;
-             rdfs:range :FoodKind .
+###  https://w3id.org/hammar/recipe#hasIngredientKind
+:hasIngredientKind rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Ingredient ;
+                   rdfs:range :IngredientKind ;
+                   <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasNextStep
-:hasNextStep rdf:type owl:ObjectProperty ;
-             rdfs:domain :Step ;
-             rdfs:range :Step .
+###  https://w3id.org/hammar/recipe#hasMeasurementUnit
+:hasMeasurementUnit rdf:type owl:ObjectProperty ;
+                    rdfs:domain :IngredientAmount ;
+                    rdfs:range :MeasurementUnit ;
+                    <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasQuantityValue
+###  https://w3id.org/hammar/recipe#hasQuantityValue
 :hasQuantityValue rdf:type owl:ObjectProperty ;
-                  rdfs:domain :FoodItem ;
-                  rdfs:range :QuantityValue .
+                  rdfs:domain :Ingredient ;
+                  rdfs:range :IngredientAmount ;
+                  <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasStep
+###  https://w3id.org/hammar/recipe#hasStep
 :hasStep rdf:type owl:ObjectProperty ;
          rdfs:domain :Recipe ;
          rdfs:range :Step .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasType
+###  https://w3id.org/hammar/recipe#hasType
 :hasType rdf:type owl:ObjectProperty ;
          rdfs:domain :Equipment ;
-         rdfs:range :Type .
+         rdfs:range :EquipmentType ;
+         <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c> .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasUnit
-:hasUnit rdf:type owl:ObjectProperty ;
-         rdfs:domain :QuantityValue ;
-         rdfs:range :Unit .
+###  https://w3id.org/hammar/recipe#nextStep
+:nextStep rdf:type owl:ObjectProperty ;
+          rdfs:domain :Step ;
+          rdfs:range :Step ;
+          <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> .
+
+
+###  https://w3id.org/hammar/recipe#requiresEquipment
+:requiresEquipment rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Step ;
+                   rdfs:range :Equipment .
+
+
+###  https://w3id.org/hammar/recipe#requiresIngredient
+:requiresIngredient rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Step ;
+                    rdfs:range :Ingredient .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasNumericValue
+###  https://w3id.org/hammar/recipe#hasNumericValue
 :hasNumericValue rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :QuantityValue ;
+                 rdfs:domain :IngredientAmount ;
                  rdfs:range xsd:double ;
-                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "590.4539317115676"^^xsd:double ;
-                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "959.6846359853367"^^xsd:double ;
+                 <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> ;
+                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "400.45393171156763"^^xsd:double ;
+                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "169.68463598533674"^^xsd:double ;
                                                                               rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                             ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#hasStepNumber
-:hasStepNumber rdf:type owl:DatatypeProperty ;
-               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "490.0"^^xsd:double ;
-                                                                            <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "620.0"^^xsd:double ;
-                                                                            rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
-                                                                          ] .
+###  https://w3id.org/hammar/recipe#stepDescription
+:stepDescription rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Step ;
+                 rdfs:range xsd:string ;
+                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "320.0"^^xsd:double ;
+                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "250.0"^^xsd:double ;
+                                                                              rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                            ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#prepLength
-:prepLength rdf:type owl:DatatypeProperty ;
-            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "580.0"^^xsd:double ;
-                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "310.0"^^xsd:double ;
-                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
-                                                                       ] .
-
-
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#stepLanguage
-:stepLanguage rdf:type owl:DatatypeProperty ;
-              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "200.0"^^xsd:double ;
-                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "480.0"^^xsd:double ;
+###  https://w3id.org/hammar/recipe#stepDuration
+:stepDuration rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Step ;
+              rdfs:range xsd:float ;
+              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "440.0"^^xsd:double ;
+                                                                           <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "240.0"^^xsd:double ;
                                                                            rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                          ] .
+
+
+###  https://w3id.org/hammar/recipe#stepNumber
+:stepNumber rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Step ;
+            rdfs:range xsd:int ;
+            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "190.0"^^xsd:double ;
+                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "190.0"^^xsd:double ;
+                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                       ] .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#Equipment
+###  http://ontologydesignpatterns.org/opla#Module
+<http://ontologydesignpatterns.org/opla#Module> rdf:type owl:Class .
+
+
+###  http://ontologydesignpatterns.org/opla#Pattern
+<http://ontologydesignpatterns.org/opla#Pattern> rdf:type owl:Class .
+
+
+###  https://w3id.org/hammar/recipe#Equipment
 :Equipment rdf:type owl:Class ;
-           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "199.83513615709455"^^xsd:double ;
-                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "310.4113180858893"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c> ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "619.8351361570946"^^xsd:double ;
+                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "540.4113180858893"^^xsd:double ;
                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                       ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#FoodItem
-:FoodItem rdf:type owl:Class ;
-          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "390.2474516653264"^^xsd:double ;
-                                                                       <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "780.2021578117108"^^xsd:double ;
-                                                                       rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
-                                                                     ] .
-
-
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#FoodKind
-:FoodKind rdf:type owl:Class ;
-          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "589.636719717227"^^xsd:double ;
-                                                                       <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "780.2239441476603"^^xsd:double ;
-                                                                       rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
-                                                                     ] .
-
-
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#QuantityValue
-:QuantityValue rdf:type owl:Class ;
-               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "389.5176461203911"^^xsd:double ;
-                                                                            <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "910.1405937072991"^^xsd:double ;
+###  https://w3id.org/hammar/recipe#EquipmentType
+:EquipmentType rdf:type owl:Class ;
+               <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c> ;
+               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "610.1914391520252"^^xsd:double ;
+                                                                            <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "689.725324001384"^^xsd:double ;
                                                                             rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                           ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#Recipe
+###  https://w3id.org/hammar/recipe#Ingredient
+:Ingredient rdf:type owl:Class ;
+            <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> ;
+            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "590.2474516653265"^^xsd:double ;
+                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "310.2021578117107"^^xsd:double ;
+                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                       ] .
+
+
+###  https://w3id.org/hammar/recipe#IngredientAmount
+:IngredientAmount rdf:type owl:Class ;
+                  <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> ;
+                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "619.5176461203911"^^xsd:double ;
+                                                                               <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "90.14059370729905"^^xsd:double ;
+                                                                               rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                             ] .
+
+
+###  https://w3id.org/hammar/recipe#IngredientKind
+:IngredientKind rdf:type owl:Class ;
+                <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> ;
+                <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "739.636719717227"^^xsd:double ;
+                                                                             <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "160.22394414766032"^^xsd:double ;
+                                                                             rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                           ] .
+
+
+###  https://w3id.org/hammar/recipe#MeasurementUnit
+:MeasurementUnit rdf:type owl:Class ;
+                 <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> ;
+                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "239.8230964495375"^^xsd:double ;
+                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "90.12565484859402"^^xsd:double ;
+                                                                              rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                            ] .
+
+
+###  https://w3id.org/hammar/recipe#PreparationStep
+:PreparationStep rdf:type owl:Class ;
+                 rdfs:subClassOf :Step ;
+                 <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> ;
+                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "330.09007689032796"^^xsd:double ;
+                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "660.0655711387296"^^xsd:double ;
+                                                                              rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                            ] .
+
+
+###  https://w3id.org/hammar/recipe#Recipe
 :Recipe rdf:type owl:Class ;
-        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "320.37770029216557"^^xsd:double ;
-                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "579.8737454327586"^^xsd:double ;
+        <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> ;
+        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "150.37770029216557"^^xsd:double ;
+                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "319.87374543275865"^^xsd:double ;
                                                                      rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                    ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#Step
+###  https://w3id.org/hammar/recipe#Step
 :Step rdf:type owl:Class ;
-      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                        owl:onProperty :callsFor ;
-                        owl:allValuesFrom :FoodItem
-                      ] ;
-      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "419.55651442850916"^^xsd:double ;
-                                                                   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "510.42590780139255"^^xsd:double ;
+      <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> ;
+      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "429.55651442850916"^^xsd:double ;
+                                                                   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "410.42590780139255"^^xsd:double ;
                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                  ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#TimedStep
+###  https://w3id.org/hammar/recipe#TimedStep
 :TimedStep rdf:type owl:Class ;
            rdfs:subClassOf :Step ;
-           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "480.09007689032796"^^xsd:double ;
-                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "400.06557113872964"^^xsd:double ;
+           <http://ontologydesignpatterns.org/opla#isNativeTo> <https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> ;
+           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "439.67816363272846"^^xsd:double ;
+                                                                        <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "709.9446594689566"^^xsd:double ;
                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
                                                                       ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#Type
-:Type rdf:type owl:Class ;
-      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "380.1914391520252"^^xsd:double ;
-                                                                   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "309.7253240013841"^^xsd:double ;
-                                                                   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
-                                                                 ] .
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping
+<https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://ontologydesignpatterns.org/opla#Pattern> ;
+                                                                                          rdfs:label "Explicit Typing"^^xsd:string .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2020/4/untitled-ontology-554#Unit
-:Unit rdf:type owl:Class ;
-      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "589.8230964495375"^^xsd:double ;
-                                                                   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "870.125654848594"^^xsd:double ;
-                                                                   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
-                                                                 ] .
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity
+<https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:NamedIndividual ,
+                                                                                             <http://ontologydesignpatterns.org/opla#Pattern> ;
+                                                                                    rdfs:label "Quantities and Units"^^xsd:string .
 
 
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "479.67816363272846"^^xsd:double ;
-  <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "579.9446594689566"^^xsd:double ;
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory
+<https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> rdf:type owl:NamedIndividual ,
+                                                                                               <http://ontologydesignpatterns.org/opla#Pattern> ;
+                                                                                      rdfs:label "Trajectory"^^xsd:string .
+
+
+###  https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f
+<https://w3id.org/hammar/recipe-modules/d7a2607c-6ef5-4ff8-a3eb-d5f563ad444f> rdf:type owl:NamedIndividual ,
+                                                                                       <http://ontologydesignpatterns.org/opla#Module> ;
+                                                                              <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> ;
+                                                                              rdfs:label "'Trajectory' ODP Instantiation Module"^^xsd:string .
+
+
+###  https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c
+<https://w3id.org/hammar/recipe-modules/19e84e3d-f7f9-4be5-90a9-c9a7906b145c> rdf:type owl:NamedIndividual ,
+                                                                                       <http://ontologydesignpatterns.org/opla#Module> ;
+                                                                              <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping> ;
+                                                                              rdfs:label "'Explicit Typing' ODP Instantiation Module"^^xsd:string .
+
+
+###  https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d
+<https://w3id.org/hammar/recipe-modules/43fb0e32-3c62-4b21-9fb2-c329b62c1c9d> rdf:type owl:NamedIndividual ,
+                                                                                       <http://ontologydesignpatterns.org/opla#Module> ;
+                                                                              <http://ontologydesignpatterns.org/opla#reusesPatternAsTemplate> <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> ;
+                                                                              rdfs:label "'Quantities and Units' ODP Instantiation Module"^^xsd:string .
+
+
+[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "260.34319310901174"^^xsd:double ;
+  <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "320.49202739567136"^^xsd:double ;
   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
 ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "479.55651442850916"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "490.42590780139255"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "310.34319310901174"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "400.49202739567136"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "480.09007689032796"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "400.06557113872964"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "320.37770029216557"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "579.8737454327586"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "250.0"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "390.0"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "199.83513615709455"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "310.4113180858893"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "390.2474516653264"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "780.2021578117108"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "589.636719717227"^^xsd:double ;
-   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "780.2239441476603"^^xsd:double ;
-   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:Restriction ;
-   owl:onProperty :callsFor ;
-   owl:someValuesFrom :FoodItem ;
-   rdfs:subClassOf :Step
- ] .
-
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

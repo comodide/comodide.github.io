@@ -13,20 +13,19 @@ The user story is as follows:
 > 4. (Excerpt)...
 > 17. Enjoy!
 
-
 The resulting ontology should be able to answer the following competency questions, derived from the story above.
 
 1. What are the steps in example:recipeXX? (*Trajectory* Pattern)
 2. How long will it take to complete example:recipeXX? (no pattern)
-3. How long do I need to boil the pasta in the 3rd step? (*Temporal Extent* Pattern)
+3. How long do I need to boil the pasta in the 3rd step? (no pattern)
 4. What types of equipment are needed to complete this recipe? (*Explicit Typing* Pattern)
 5. How much fennel is needed in example:recipeXX? (*Quantities and Units*)
 
 For this task, we recommend to use the following CoModIDE settings:
 
 * **Entity naming:** use target namespace
-* **Module annotations:** external
-* **Edge creation axioms:** OWLSomeValuesFrom / OWLAllValuesFrom
+* **Module annotations:** internal
+* **Edge creation axioms:** RDFS Domain/Range
 * **Edge deletion policy:** delete property declarations
 * **Send Telemetry:** your choice, but we would definitely appreciate if you would have it checked
 
