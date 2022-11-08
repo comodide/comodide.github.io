@@ -33,5 +33,5 @@ Our tutorial on CoModIDE will be held from 09:00 through 12:30 CEST; for details
 
 ## Contact details
 
-* [Cogan Shimizu](mailto:cogan.comodide@coganshimizu.com), Data Semantics Lab, Kansas State University, USA
+* [Cogan Shimizu](mailto:cogan.comodide@coganshimizu.com), Knowledge and Semantic Technologies Lab, Wright State University, USA
 * [Karl Hammar](mailto:karl.hammar@ju.se), Jönköping AI Lab, Jönköping University, Sweden
